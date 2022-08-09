@@ -12,6 +12,8 @@ public class Atividade1 {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Atividade 1");
+		
 		int a = 65;
 		System.out.println("Convert int:" + a + " to long=" + intToLong(a));
 		System.out.println("Convert int:" + a + " to char=" + intToChar(a));
@@ -58,7 +60,7 @@ public class Atividade1 {
 		float n = (float) number;
 		return n;
 	}
-	
+
 	public static int doubleToInt (double number) {
 		int n = (int) number;
 		return n;
