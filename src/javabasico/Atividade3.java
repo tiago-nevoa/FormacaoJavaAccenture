@@ -13,11 +13,11 @@ public class Atividade3 {
 		
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("Introduz um raio:");
+		System.out.println("Introduz um raio");
 		double raio = keyboard.nextDouble();
 		while (raio < 0) {
 			System.out.println("Porfavor insira um valor de raio >= 0!");
-			System.out.println("Introduz um raio:");
+			System.out.println("Introduz um raio");
 			raio = keyboard.nextDouble();
 		}
 		
