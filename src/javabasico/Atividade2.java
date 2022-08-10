@@ -17,12 +17,24 @@ public class Atividade2 {
 		
 		System.out.println("Nome?");
 		name = keyboard.nextLine();
+		while (name.length() <= 0) {
+			System.out.println("Nome?");
+			name = keyboard.nextLine();
+		}
 		
 		System.out.println("Sobrenome?");
 		surname = keyboard.nextLine();
+		while (surname.length() <= 0) {
+			System.out.println("Sobrenome?");
+			surname = keyboard.nextLine();
+		}
 		
 		System.out.println("Idade?");
 		age = keyboard.nextInt();
+		while (age < 0) {
+			System.out.println("Idade?");
+			age = keyboard.nextInt();
+		}
 		
 		System.out.println("Ola " + name + " " + surname + " tens " + age + " anos.");
 	}
