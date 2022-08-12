@@ -8,7 +8,7 @@ public class Atividade8 {
 
 	public static void main(String[] args) {
 		
-		String s = "A chuva em Lisboa e uma maravilha";
+		String s = "a chuva em Lisboa e uma maravilha";
 		
 		int counter = 0;
 		
