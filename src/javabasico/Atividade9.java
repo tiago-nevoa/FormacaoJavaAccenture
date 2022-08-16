@@ -4,8 +4,12 @@ public class Atividade9 {
 
 	public static void main(String[] args) {
 		
-		String s = "a chuva em Lisboa e uma maravilha";
+		String s = "A chuva em Lisboa e uma maravilha";
+		
+		String sAux = s.replace('a', 'e');
+		
+		s = sAux;
 
-		System.out.println(s.replace('a', 'e'));
+		System.out.println(s);
 	}
 }

@@ -8,13 +8,13 @@ public class Atividade8 {
 
 	public static void main(String[] args) {
 		
-		String s = "a chuva em Lisboa e uma maravilha";
+		String s = "A chuva em Lisboa e uma maravilha";
 		
 		int counter = 0;
 		
 		for(int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' ||
-				s.charAt(i) == 'o' || s.charAt(i) == 'u') ++counter;
+			if (Character.toLowerCase(s.charAt(i)) == 'a' || Character.toLowerCase(s.charAt(i)) == 'e' || Character.toLowerCase(s.charAt(i)) == 'i' ||
+				Character.toLowerCase(s.charAt(i)) == 'o' || Character.toLowerCase(s.charAt(i)) == 'u') ++counter;
 		}
 		System.out.println("Ha " + counter + " vogais");
 	}
