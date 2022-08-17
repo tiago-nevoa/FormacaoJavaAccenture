@@ -13,7 +13,7 @@ public class Atividade1 {
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.println("Insert Number:");
-		double n = keyboard.nextDouble();
+		int n = keyboard.nextInt();
 		
 		if(n%2 == 0) System.out.println ("The Number is par!");
 		else System.out.println ("The Number is odd!");
