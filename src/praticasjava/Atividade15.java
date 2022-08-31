@@ -6,8 +6,14 @@ package praticasjava;
 import javax.swing.JOptionPane;
 
 public class Atividade15 {
-
+	
+	static String PRIME_FRAME = "3,";
+	static int ARRAY_MAX_LENGHT = 4792;
+	static int ARRAY_CURSOR = 0;
+	static int PRIMES [] = new int[ARRAY_MAX_LENGHT];
+	
 	public static void main(String[] args) {
+		
 		
 		boolean prime = false;
 		int number = 0;
@@ -25,21 +31,25 @@ public class Atividade15 {
 		
 		if (prime) JOptionPane.showMessageDialog(null,"The number is Prime!","Atividade 15.",JOptionPane.INFORMATION_MESSAGE);
 		else JOptionPane.showMessageDialog(null,"The number is composite!","Atividade 15.",JOptionPane.INFORMATION_MESSAGE);
-	     
+	    System.out.println(PRIME_FRAME);
+	    for (int i = 0; i < PRIMES.length; i++) {
+	    	System.out.print(PRIMES[i]);
+	    	System.out.print(" ");
+	    }
 		System.exit(0); 
 }
 	
 	public static boolean checkPrime(int number, int nSqrt) {
-		boolean prime = true;
+		
 		int currentPrime = 3;
-		//int nextPrime;
 		
 		while(currentPrime <= nSqrt) {
+			
+			PRIMES [ARRAY_CURSOR++] = currentPrime;
 			if (number % currentPrime == 0) return false;
 			currentPrime = nextPrime(currentPrime);
-			
 		}
-		
+		PRIMES [ARRAY_CURSOR++] = currentPrime;
 		return true;
 	}
 	
@@ -51,7 +61,7 @@ public class Atividade15 {
 		for (int i = number; ; i+=2) {
 			prime = true;
 			System.out.println(i + " number to check");
-			for (int j = i - 2; j > 2; j = j-2) {
+			for (int j = 3; j <= i-2; j = j+2) {
 				System.out.println(j + " number to divid");
 				
 				if (i % j == 0) {
