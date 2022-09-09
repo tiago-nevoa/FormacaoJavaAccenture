@@ -31,7 +31,7 @@ public class Atividade15 {
 		
 		if (prime) JOptionPane.showMessageDialog(null,"The number is Prime!","Atividade 15.",JOptionPane.INFORMATION_MESSAGE);
 		else JOptionPane.showMessageDialog(null,"The number is composite!","Atividade 15.",JOptionPane.INFORMATION_MESSAGE);
-	    for (int i = 0; i < PRIMES.length; i++) {
+	    for (int i = 0; i < PRIMES.length && PRIMES[i] != 0; i++) {
 	    	System.out.print(PRIMES[i]);
 	    	System.out.print(",");
 	    }
